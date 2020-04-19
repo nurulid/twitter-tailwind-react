@@ -2,9 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+/* variable */
+:root {
+  /* text blue */
+  --text-blue-100: #ebf8ff;
+  --text-blue-200: #bee3f8;
+  --text-blue-300: #90cdf4;
+  --text-blue-400: #63b3ed;
+  --text-blue-500: #4299e1;
+  --text-blue-600: #3182ce;
+  --text-blue-700: #2b6cb0;
+
+  /* additional gray */
+  --gray-750: rgb(37, 51, 65);
+  --gray-850: rgb(25, 39, 52);
+
+  /* border color */
+  --border-gray: #2d3748;
+
+  /* text gray */
+  --text-gray: #718096;
+}
+
+/*== additional custom color/backgroung-color ==*/
+
 /* Your custom CSS here */
 body {
   color: #ffffff;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.right-sidebar {
+  width: 32%;
 }
 
 .right-sidebar {
@@ -17,4 +47,31 @@ body {
 
 .tweet-list {
   height: 1000px;
+}
+
+/* new tweet */
+.new-tweet textarea::placeholder {
+  color: var(--text-gray);
+  font-size: 1.2rem;
+}
+
+/* search box */
+.search__input {
+  background-color: var(--gray-750);
+  border-color: var(--gray-750);
+}
+
+.search-box input:focus {
+  border-width: 1px;
+}
+
+/* more box list */
+.more-box-wrapper {
+  background-color: var(--gray-850);
+}
+
+.trends-item:hover, 
+.more-box__link:hover,
+.tweet-item:hover {
+  background-color: rgb(255, 255, 255, 0.03);
 }
