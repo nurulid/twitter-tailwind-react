@@ -10918,6 +10918,10 @@ body {
   color: #ffffff;
 }
 
+.right-sidebar {
+  width: 35%;
+}
+
 .rounded-circle {
   border-radius: 50%;
 }
