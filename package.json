@@ -3,16 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.9",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-icons": "^3.9.0",
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "npm-run-all --parallel watch:css start:react",
+    "build": "npm-run-all build:css build:react",
+    "start:react": "react-scripts start",
+    "watch:css": "postcss src/styles/index.css -o src/index.css -w",
+    "build:react": "react-scripts build",
+    "build:css": "postcss src/styles/index.css -o src/index.css",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -30,5 +38,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.0",
+    "tailwindcss": "^1.2.0"
   }
 }
