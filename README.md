@@ -16,9 +16,9 @@ Twitter Clone with React and Tailwind
 # Hompage components
 left
 - logo ✔️
-- nav (=> more (+showmore list)) ✔️
+- nav (👉 more (+showmore list)) 🏋️‍♀️
 - new tweet button ✔️
-- user menu button (+showmore list) ✔️
+- user menu button (+showmore list) 🏋️‍♀️
 
 center
 - top sticky bar (sticky) ✔️
