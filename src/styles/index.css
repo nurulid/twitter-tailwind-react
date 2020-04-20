@@ -45,8 +45,16 @@ body {
   border-radius: 50%;
 }
 
-.tweet-list {
+.tweet-timelines {
   height: 1000px;
+}
+
+.animation,
+button,
+.tweet-item,
+.more-box__item,
+.more-box__link {
+  transition: all 0.2s linear;
 }
 
 /* new tweet */
@@ -70,7 +78,7 @@ body {
   background-color: var(--gray-850);
 }
 
-.trends-item:hover, 
+.more-box__item:hover,
 .more-box__link:hover,
 .tweet-item:hover {
   background-color: rgb(255, 255, 255, 0.03);
